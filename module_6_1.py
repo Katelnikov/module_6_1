@@ -18,23 +18,16 @@ class Animal():
 class Mammal(Animal):
     pass
 
-
 class Predator(Animal):
     pass
 
-
 class Plant():
     edible = False  #(съедобность)- (атрибут класса)
-
     def __init__(self, name):
-        self.name = name    #(индивидуальное название каждого растения)- (атрибут экземпляра)
-
+        self.name = name
 
 class Fruit(Plant):
-    def __init__(self, name):
-        super().__init__(name)
-        self.edible = True
-
+    edible = True #(индивидуальное название каждого растения)- (атрибут экземпляра)
 
 class Flower(Plant):
     pass
