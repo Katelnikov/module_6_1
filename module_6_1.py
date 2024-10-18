@@ -1,7 +1,8 @@
 class Animal():
+    alive = True  # (живой)- (атрибут класса)
+    fed = False  # (накормленный)- (атрибут класса)
+
     def __init__(self, name):
-        self.alive = True   #(живой)- (атрибут класса)
-        self.fed = False    #(накормленный)- (атрибут класса)
         self.name = name    #(индивидуальное название каждого животного)- (атрибут экземпляра)
 
 
@@ -23,9 +24,10 @@ class Predator(Animal):
 
 
 class Plant():
+    edible = False  #(съедобность)- (атрибут класса)
+
     def __init__(self, name):
         self.name = name    #(индивидуальное название каждого растения)- (атрибут экземпляра)
-        self.edible = False #(съедобность)- (атрибут класса)
 
 
 class Fruit(Plant):
